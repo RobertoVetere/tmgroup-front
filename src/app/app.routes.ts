@@ -6,9 +6,16 @@ export const routes: Routes = [
     redirectTo: 'folder/inbox',
     pathMatch: 'full',
   },
+   {
+    path: 'customer',
+    loadComponent: () => import('./pages/customers/customers.component').then(m => m.CustomersComponent),
+  },
   {
-    path: 'folder/:id',
-    loadComponent: () =>
-      import('./folder/folder.page').then((m) => m.FolderPage),
+    path: 'budget',
+    loadComponent: () => import('./pages/budgets/budgets.component').then(m => m.BudgetsComponent),
+  },
+  {
+    path: 'bills',
+    loadComponent: () => import('./pages/bills/bills.component').then(m => m.BillsComponent),
   },
 ];
