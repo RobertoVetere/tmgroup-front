@@ -1,0 +1,7 @@
+{
+  "name": "autonomo-erp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
